@@ -1,0 +1,19 @@
+type InvoiceStatus = 'pending' | 'paid';
+
+interface Customer {
+    id: number;
+    name: string;
+    email: string;
+}
+
+interface Invoice {
+    id: number;
+    amount: number;
+    status: InvoiceStatus;
+    issueDate: string;
+    dueDate: string;
+    customer: Customer;
+}
+
+
+export default invoices;
